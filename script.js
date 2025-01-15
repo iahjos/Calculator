@@ -59,12 +59,12 @@ function handleMath(symbol) {
     }
     previousOperator = symbol;
 
-    // Keep the current total on display but prepare for a new number
+ 
     buffer = runningTotal.toString();
-    shouldClearBuffer = true; // Set flag to clear buffer when next number is entered
+    shouldClearBuffer = true; 
 }
 
-let shouldClearBuffer = false; // New flag to track when to clear the buffer
+let shouldClearBuffer = false; 
 
 function flushOperation(floatBuffer) {
     if (previousOperator === '+') {
@@ -79,10 +79,9 @@ function flushOperation(floatBuffer) {
 }
 
 function handleNumber(numberString) {
-    // Clear buffer if we just pressed an operator
     if (shouldClearBuffer) {
         buffer = numberString;
-        shouldClearBuffer = false; // Reset the flag
+        shouldClearBuffer = false; 
     } else {
         if (buffer === "0") {
             buffer = numberString;
