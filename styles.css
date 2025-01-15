@@ -65,7 +65,7 @@ body {
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
     color: #232323;
     flex-basis: 20%;
-    font-family: inherit; /* Fixed typo from 'inehrit' */
+    font-family: inherit; 
     font-size: 24px;
     height: 65px;
 }
@@ -94,24 +94,24 @@ body {
 }
 
 footer {
-    position: absolute; /* Absolute positioning relative to the viewport */
-    bottom: 10px; /* 10px from the bottom of the page */
-    left: 10px; /* 10px from the left side of the page */
+    position: absolute; 
+    bottom: 10px; 
+    left: 10px; 
     font-family: 'Source Code Pro', sans-serif;
     letter-spacing: 2px;
-    font-size: 16px; /* Adjust the font size as needed */
-    padding: 5px 10px; /* Optional: Add some padding */
-    border-radius: 5px; /* Optional: Rounded corners */
+    font-size: 16px; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
 }
 
 footer h3 {
     background: linear-gradient(45deg, red, darkorange, rgb(255, 213, 0)); /* Gradient colors */
     background-size: 300% 300%;
-    -webkit-background-clip: text; /* Use the background clip to apply the gradient to text */
-    -moz-background-clip: text; /* For Firefox */
-    background-clip: text; /* Standard property */
-    color: transparent; /* Make text color transparent so that only gradient shows */
-    animation: gradientAnimation 9s linear infinite; /* Apply the gradient animation */
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    animation: gradientAnimation 9s linear infinite; 
 }
 
 @keyframes gradientAnimation {
