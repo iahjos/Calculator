@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: black;
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.wrapper {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit; /* Fixed typo from 'inehrit' */
+    font-size: 24px;
+    height: 65px;
+}
+
+.calc-button:last-child {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #fff;
+    background: darkorange;
+}
+
+.calc-button:last-child:active {
+    background-color: gray;
+}
+
+.calc-button:active {
+    background-color: gray;
+}
+
+.double {
+    flex-basis: 47%;
+}
+
+footer {
+    position: absolute; /* Absolute positioning relative to the viewport */
+    bottom: 10px; /* 10px from the bottom of the page */
+    left: 10px; /* 10px from the left side of the page */
+    font-family: 'Source Code Pro', sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 5px 10px; /* Optional: Add some padding */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+footer h3 {
+    background: linear-gradient(45deg, red, darkorange, rgb(255, 213, 0)); /* Gradient colors */
+    background-size: 300% 300%;
+    -webkit-background-clip: text; /* Use the background clip to apply the gradient to text */
+    -moz-background-clip: text; /* For Firefox */
+    background-clip: text; /* Standard property */
+    color: transparent; /* Make text color transparent so that only gradient shows */
+    animation: gradientAnimation 9s linear infinite; /* Apply the gradient animation */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
