@@ -105,7 +105,7 @@ footer {
 }
 
 footer h3 {
-    background: linear-gradient(45deg, red, darkorange, rgb(255, 213, 0)); /* Gradient colors */
+    background: linear-gradient(45deg, red, darkorange, rgb(255, 213, 0)); 
     background-size: 300% 300%;
     -webkit-background-clip: text; 
     -moz-background-clip: text; 
